@@ -27,6 +27,9 @@ public class userLogin extends JFrame {
                     JOptionPane.showMessageDialog(userLogin.this, "Please enter both username and password", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
+                else{
+
+                }
             }
         });
         hideIcon.addMouseListener(new MouseAdapter() {
@@ -48,6 +51,13 @@ public class userLogin extends JFrame {
                 showIcon.setEnabled(false);
                 hideIcon.setVisible(true);
                 hideIcon.setVisible(true);
+            }
+        });
+        singUpButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                 new userRegster().setVisible(true);
+
             }
         });
     }
